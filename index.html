@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hong's Little Kitchen Asian Cuisine — Authentic Asian fusion in Point Cook. Dumplings, wonton noodle soups, and more. Dine-in, takeaway, or delivery.">
+  <meta name="theme-color" content="#c0392b">
+  <title>Hong's Little Kitchen Asian Cuisine | Point Cook</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-brand">
+      <img src="images/logo.png" alt="Hong's Little Kitchen Logo" loading="lazy">
+      <span>Hong's Kitchen</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#menu" class="nav-order-btn">🍜 Order Online</a></li>
+    </ul>
+
+    <div class="menu-toggle" role="button" aria-label="Toggle navigation menu" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-food.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">✦ Authentic Asian Cuisine</div>
+      <h1>Hong's Little Kitchen</h1>
+      <p class="hero-subtitle">Asian Cuisine</p>
+      <p class="hero-tagline">
+        Generous hospitality, authentic flavours, and a chef who listens.
+        Experience the taste of home at Sanctuary Lakes Shopping Centre.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">📖 View Menu</a>
+        <a href="#menu" class="btn btn-secondary">🛵 Order Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">4.9★</span>
+          <span class="hero-stat-label">Rating</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">5000+</span>
+          <span class="hero-stat-label">Happy Guests</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">88%</span>
+          <span class="hero-stat-label">Repeat Customers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">⌄</div>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="section about" id="about">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Our Story</span>
+        <h2>Where Tradition Meets <span style="color: var(--red-primary);">Heart</span></h2>
+        <div class="divider"></div>
+        <p>Discover the soul of Asian cuisine, crafted with care in every dish.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="images/interior.jpg" alt="Hong's Little Kitchen interior — warm, inviting atmosphere" loading="lazy">
+        </div>
+        <div class="about-text fade-in">
+          <h3>Cooking with Love, Serving with <span style="color: var(--red-primary);">Generosity</span></h3>
+          <p>
+            At Hong's Little Kitchen, every dish tells a story. From our hand-folded dumplings to our
+            aromatic wonton noodle soups, we bring the authentic flavours of Asian cuisine to Point Cook
+            with a philosophy rooted in quality, freshness, and genuine hospitality.
+          </p>
+          <p>
+            Our chef listens — crafting each plate with care, using time-honoured techniques and the
+            finest ingredients. Whether you're here for a quick lunch, a family dinner, or a takeaway
+            feast, you're not just a guest; you're family.
+          </p>
+          <p>
+            <strong>Free hot tea</strong> with every dine-in meal. Bike parking available.
+            Come as you are, leave satisfied.
+          </p>
+          <div class="about-signature">— Chef Hong</div>
+        </div>
+      </div>
+
+      <div class="about-values fade-in">
+        <div class="value-item">
+          <div class="value-icon">🥟</div>
+          <h4>Handmade Daily</h4>
+          <p style="font-size: 0.85rem; color: #7a6a5a; margin-top: 0.5rem;">Fresh dumplings made from scratch every day</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">🌿</div>
+          <h4>Quality First</h4>
+          <p style="font-size: 0.85rem; color: #7a6a5a; margin-top: 0.5rem;">Only the freshest ingredients go into our wok</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">❤️</div>
+          <h4>Family Service</h4>
+          <p style="font-size: 0.85rem; color: #7a6a5a; margin-top: 0.5rem;">Every guest treated like family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MENU SECTION ====== -->
+  <section class="section menu" id="menu">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Our Menu</span>
+        <h2>Signature <span style="color: var(--gold-primary);">Dishes</span></h2>
+        <div class="divider"></div>
+        <p>Handcrafted with authentic flavours — from our wok to your table.</p>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="menu-categories fade-in">
+        <button class="menu-cat-btn active" data-category="all">All</button>
+        <button class="menu-cat-btn" data-category="dumplings">Dumplings</button>
+        <button class="menu-cat-btn" data-category="noodles">Noodles & Rice</button>
+        <button class="menu-cat-btn" data-category="mains">Mains</button>
+        <button class="menu-cat-btn" data-category="starters">Starters</button>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid">
+
+        <!-- Item 1: Dumplings -->
+        <div class="menu-item fade-in" data-category="dumplings">
+          <div class="menu-item-image">
+            <img src="images/dumplings.jpg" alt="Handmade Dumplings" loading="lazy">
+            <span class="menu-item-badge">Best Seller</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Pan Fried Dumplings</h3>
+              <span class="menu-item-price">$13.90</span>
+            </div>
+            <p class="menu-item-desc">Golden crispy-bottom dumplings, hand-folded daily with seasoned pork and chives. Served with house soy-vinegar dip.</p>
+            <span class="menu-item-diet">🌱 Classic</span>
+          </div>
+        </div>
+
+        <!-- Item 2: Xiao Long Bao -->
+        <div class="menu-item fade-in" data-category="dumplings">
+          <div class="menu-item-image">
+            <img src="images/dumplings.jpg" alt="Xiao Long Bao — Soup Dumplings" loading="lazy">
+            <span class="menu-item-badge">⭐ Signature</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Xiao Long Bao (Soup Dumplings)</h3>
+              <span class="menu-item-price">$14.90</span>
+            </div>
+            <p class="menu-item-desc">Delicate steamed dumplings filled with savoury pork and rich, hot broth — a true Shanghai classic bursting with flavour.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Wonton Noodle Soup -->
+        <div class="menu-item fade-in" data-category="noodles">
+          <div class="menu-item-image">
+            <img src="images/hero-food.jpg" alt="Wonton Noodle Soup" loading="lazy">
+            <span class="menu-item-badge">🌶️ Spicy</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Spicy Wonton Noodle Soup</h3>
+              <span class="menu-item-price">$16.90</span>
+            </div>
+            <p class="menu-item-desc">Plump prawn-and-pork wontons in a bold, aromatic chilli broth with springy egg noodles. Garnished with spring onions and sesame.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Sweet and Sour Pork -->
+        <div class="menu-item fade-in" data-category="mains">
+          <div class="menu-item-image">
+            <img src="images/sweet-sour-pork.jpg" alt="Sweet and Sour Pork" loading="lazy">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Sweet and Sour Pork</h3>
+              <span class="menu-item-price">$18.90</span>
+            </div>
+            <p class="menu-item-desc">Crispy battered pork tossed in a tangy-sweet house-made sauce with pineapple, capsicum, and onion. A perennial favourite.</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Prawn Toast -->
+        <div class="menu-item fade-in" data-category="starters">
+          <div class="menu-item-image">
+            <img src="images/prawn-toast.jpg" alt="Prawn Toast" loading="lazy">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Prawn Toast</h3>
+              <span class="menu-item-price">$11.90</span>
+            </div>
+            <p class="menu-item-desc">Golden-fried bread topped with seasoned prawn mince, sesame-crusted. Served with sweet chilli sauce. Irresistibly crunchy.</p>
+          </div>
+        </div>
+
+        <!-- Item 6: Sesame Prawn Toast -->
+        <div class="menu-item fade-in" data-category="starters">
+          <div class="menu-item-image">
+            <img src="images/prawn-toast.jpg" alt="Sesame Prawn Toast" loading="lazy">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Sesame Prawn Toast</h3>
+              <span class="menu-item-price">$12.90</span>
+            </div>
+            <p class="menu-item-desc">Our signature prawn toast with an extra coating of toasted sesame seeds for a nutty crunch. Served with plum sauce.</p>
+            <span class="menu-item-diet">🌱 Popular</span>
+          </div>
+        </div>
+
+        <!-- Item 7: Spring Onion Pancake -->
+        <div class="menu-item fade-in" data-category="starters">
+          <div class="menu-item-image">
+            <img src="images/prawn-toast.jpg" alt="Spring Onion Pancake" loading="lazy">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Spring Onion Pancake</h3>
+              <span class="menu-item-price">$9.90</span>
+            </div>
+            <p class="menu-item-desc">Flaky, pan-fried scallion flatbread — crispy outside, tender inside. Dipped in soy-vinegar. A perfect starter to share.</p>
+            <span class="menu-item-diet">🌱 Vegetarian</span>
+          </div>
+        </div>
+
+        <!-- Item 8: Wat Tan Hor -->
+        <div class="menu-item fade-in" data-category="noodles">
+          <div class="menu-item-image">
+            <img src="images/hero-food.jpg" alt="Wat Tan Hor — Flat Rice Noodles" loading="lazy">
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header">
+              <h3 class="menu-item-title">Wat Tan Hor (Flat Rice Noodle)</h3>
+              <span class="menu-item-price">$17.90</span>
+            </div>
+            <p class="menu-item-desc">Silky broad rice noodles stir-fried with egg, prawns, and Chinese broccoli in a silky savoury gravy. Malaysian-Chinese comfort at its best.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== REVIEWS SECTION ====== -->
+  <section class="section reviews" id="reviews">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Testimonials</span>
+        <h2>What Our <span style="color: var(--red-primary);">Guests</span> Say</h2>
+        <div class="divider"></div>
+        <p>Don't take our word for it — hear from the community we serve.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            Absolutely love this place! The dumplings are some of the best I've ever had — perfectly 
+            crispy on the bottom and packed with flavour. The wonton noodle soup is a must-try. 
+            The service is always warm and welcoming. Highly recommend!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">SP</div>
+            <div>
+              <div class="review-name">Shweta Patil</div>
+              <div class="review-source">Google Maps <span class="review-rating">5.0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            A hidden gem in Point Cook! The sweet and sour pork is the best I've had outside of 
+            Asia — perfectly balanced flavours. The prawn toast is incredibly crispy and flavorful. 
+            Chef Hong really knows how to bring authentic tastes to the table.
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">AW</div>
+            <div>
+              <div class="review-name">Alice Wee</div>
+              <div class="review-source">Google Maps <span class="review-rating">5.0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card fade-in">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            Our family's favourite takeaway spot! The xiao long bao are fantastic — authentic 
+            soup dumplings that transport you straight to Shanghai. Great vegetarian options too. 
+            The free hot tea with dine-in is such a thoughtful touch. 10/10 every time!
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">CL</div>
+            <div>
+              <div class="review-name">Celine Lim</div>
+              <div class="review-source">Google Maps <span class="review-rating">5.0</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== GALLERY SECTION ====== -->
+  <section class="section gallery" id="gallery">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Our Kitchen</span>
+        <h2>A Glimpse Inside <span style="color: var(--red-primary);">Our Kitchen</span></h2>
+        <div class="divider"></div>
+        <p>From our wok to your plate — every dish is a work of art.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in"><img src="images/hero-food.jpg" alt="Wonton Noodle Soup" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="images/dumplings.jpg" alt="Handmade Dumplings" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="images/sweet-sour-pork.jpg" alt="Sweet and Sour Pork" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="images/prawn-toast.jpg" alt="Prawn Toast" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="images/interior.jpg" alt="Restaurant Interior" loading="lazy"></div>
+        <div class="gallery-item fade-in"><img src="images/hero-food.jpg" alt="Noodle Soup" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LOCATION & HOURS SECTION ====== -->
+  <section class="section location" id="location">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Visit Us</span>
+        <h2>Find Us at <span style="color: var(--gold-primary);">Sanctuary Lakes</span></h2>
+        <div class="divider"></div>
+        <p>Come enjoy a meal in our cozy space, or order for takeaway and delivery.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card fade-in">
+          <h3><span class="icon">📍</span> Location & Hours</h3>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">📍</div>
+            <div class="location-detail-text">
+              <strong>Address</strong><br>
+              9/300 Point Cook Rd<br>
+              Point Cook VIC 3030<br>
+              Sanctuary Lakes Shopping Centre
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">📞</div>
+            <div class="location-detail-text">
+              <strong>Phone</strong><br>
+              (03) 9899 8588
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">🕐</div>
+            <div class="location-detail-text">
+              <strong>Opening Hours</strong>
+              <div class="hours-table">
+                <div class="hours-row">
+                  <span class="hours-day">Monday</span>
+                  <span class="hours-time">11:00 am – 8:30 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Tuesday</span>
+                  <span class="hours-time">11:00 am – 8:30 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Wednesday</span>
+                  <span class="hours-time">11:00 am – 8:30 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Thursday</span>
+                  <span class="hours-time">11:00 am – 8:30 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Friday</span>
+                  <span class="hours-time">11:00 am – 9:00 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">11:00 am – 9:00 pm</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">11:00 am – 8:30 pm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-detail">
+            <div class="location-detail-icon">🚲</div>
+            <div class="location-detail-text">
+              <strong>Bike Parking Available</strong><br>
+              Free hot tea with every dine-in meal
+            </div>
+          </div>
+        </div>
+
+        <div class="location-map fade-in">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.775123456789!2d144.7521!3d-37.8893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDUzJzIxLjQiUyAxNDTCsDQ1JzA3LjYiRQ!5e0!3m2!1sen!2sau!4v1"
+            title="Hong's Little Kitchen on Google Maps"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="section contact" id="contact">
+    <div class="section-container">
+      <div class="section-header fade-in">
+        <span class="section-label">Get In Touch</span>
+        <h2>We'd Love to <span style="color: var(--red-primary);">Hear From You</span></h2>
+        <div class="divider"></div>
+        <p>Questions, special requests, or large orders? Reach out anytime.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <h4>Call Us</h4>
+              <p><a href="tel:+61398998588">(03) 9899 8588</a></p>
+              <p style="font-size: 0.85rem; color: #999;">Call for takeaway orders or enquiries</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <h4>Visit Us</h4>
+              <p>9/300 Point Cook Rd, Point Cook VIC 3030</p>
+              <p style="font-size: 0.85rem; color: #999;">Sanctuary Lakes Shopping Centre</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-text">
+              <h4>Open Hours</h4>
+              <p>Mon–Sun: 11:00 am – 8:30 pm (Fri–Sat till 9pm)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🍜</div>
+            <div class="contact-text">
+              <h4>Order Online</h4>
+              <p>Available for takeaway & delivery via our partners</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="0400 000 000">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Enquiry</option>
+                <option value="order">Large Order / Catering</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">✉️ Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Hong's Little Kitchen Logo" loading="lazy">
+        <h3>Hong's Little Kitchen</h3>
+        <p>
+          Serving authentic Asian cuisine with love in Point Cook since 2020.
+          Every dish is a taste of home, crafted with the finest ingredients
+          and a generous spirit.
+        </p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Uber Eats">🛵</a>
+          <a href="#" aria-label="Google">⭐</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#location">Location & Hours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <ul class="footer-links">
+          <li><a href="tel:+61398998588">(03) 9899 8588</a></li>
+          <li><a href="https://maps.google.com/?q=9/300+Point+Cook+Rd+Point+Cook+VIC+3030" target="_blank">9/300 Point Cook Rd<br>Point Cook VIC 3030</a></li>
+          <li><a href="#location">Sanctuary Lakes SC</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Hours</h4>
+        <ul class="footer-links">
+          <li>Mon–Thur: 11am–8:30pm</li>
+          <li>Fri–Sat: 11am–9:00pm</li>
+          <li>Sunday: 11am–8:30pm</li>
+          <li><br>✶ Free hot tea with dine-in</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hong's Little Kitchen Asian Cuisine. All rights reserved. | Crafted with ❤️ in Point Cook</p>
+    </div>
+  </footer>
+
+  <!-- ====== AI CHAT WIDGET ====== -->
+  <div id="ai-chat-widget"></div>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="js/main.js"></script>
+  <script src="chat-widget.js"></script>
+
+</body>
+</html>

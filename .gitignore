@@ -1,0 +1,6 @@
+# Images (large files)
+images/*.jpg
+images/*.png
+
+# Keep placeholder if needed
+!images/.gitkeep
